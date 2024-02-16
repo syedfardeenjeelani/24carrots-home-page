@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+      @media (max-width: 768px) {
+        video {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-[sans-serif]">
+    <!-- WRAPPER DIV -->
+    <div>
+      <!-- HEADER SECTION -->
+      <div
+        id="header"
+        class="z-[99999999999999999999] flex items-center bg-white justify-center w-[100%] min-h-[131px] fixed transition duration-500"
+      >
+        <div class="flex w-[80%]">
+          <ul
+            class="flex justify-around w-[100%] text-[0.875rem] text-[#1A4122] font-normal"
+          >
+            <li class="hidden relative min-[990px]:flex group flex-col">
+              ABOUT
+              <ul
+                class="pl-4 absolute w-[400%] pt-4 text-[1rem] hidden group-hover:flex gap-1 flex-col text-[#1A4122] top-4 bg-white bg-opacity-90 font-normal rounded-3xl"
+              >
+                <li class="hidden group-hover:flex px-3 py-3">
+                  About 24 carrots
+                </li>
+                <li class="hidden group-hover:flex px-3 py-3">Team</li>
+                <li class="hidden group-hover:flex px-3 py-3">Award & Press</li>
+                <li class="hidden group-hover:flex px-3 py-3">Blog</li>
+              </ul>
+            </li>
+            <li class="hidden min-[990px]:flex">SERVICES</li>
+
+            <li class="hidden min-[990px]:flex">EVENTS</li>
+            <span><img src="assets/24carrots logo.svg" alt="logo" /></span>
+            <li class="hidden min-[990px]:flex">VENUES</li>
+            <li class="hidden min-[990px]:flex">CAREERS</li>
+            <li class="hidden min-[990px]:flex">
+              <button
+                class="px-4 py-[8PX] text-xs uppercase font-semibold tracking-wider bg-[#C15627;] text-white rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition duration-500"
+              >
+                GET IN TOUCH
+              </button>
+            </li>
+          </ul>
+          <span class="text-3xl min-[990px]:hidden"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+        </div>
+      </div>
+      <!-- HEADER FINISHED AND VIDEO SECTION START -->
+      <section class="h-[100vh] pt-[130px]">
+        <div class="relative">
+          <video
+            class="absolute"
+            autoplay
+            muted
+            loop
+            width="100%"
+            height="100%"
+          >
+            <source
+              src="assets/24carrtos-home-banner.mp4"
+              type="video/mp4"
+              controls="off"
+            />
+          </video>
+
+          <h1
+            class="absolute w-[100%] min-[927px]:top-[400px] min-[677px]:top-[250px] min-[307px]:top-[130px] top-[70px] flex justify-center items-center flex-wrap leading-7 text-white min-[1400px]:text-[7rem] min-[900px]:text-[6rem] text-[35px] font-serif font-thin"
+          >
+            Simply the Finest
+          </h1>
+        </div>
+      </section>
+      <section class="h-[100vh]"></section>
+      <section class="h-[100vh]"></section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
